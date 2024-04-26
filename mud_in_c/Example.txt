@@ -1,0 +1,23 @@
+// [0,0][0,1][0,2][0,3]
+// [1,0][1,1][1,2][1,3]
+// [2,0][2,1][2,2][2,3]
+// [3,0][3,1][3,2][3,3]
+
+MUD->
+    General
+        Centro (5,6)
+        // localLine: 8
+        // localColum--: 7
+        localLine:--:7
+        localColum--:7
+        lineMudCenter: 5
+        columMudCenter: 6
+    UP:
+        for: (5;5->4->3->2->1->0 >= 5)
+    DOWN:
+        tmpMax: 2   = rand() % (7 - 5)
+        tmpMax: 7    =  2 + 5
+        for: (5,5->6->7 >= 7)
+
+gcc robLam.c -o mud
+./mud
