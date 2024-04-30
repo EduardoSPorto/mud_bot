@@ -109,8 +109,8 @@ void findMud (){
             }
         }
     }
-    int lineNextMud = -999;
-    int columNextMud = -999;
+    int lineNextMud = -999;// Deletar
+    int columNextMud = -999;// Deletar
 
     found = 0;
     for( tmpColum = columRobot; tmpColum <= columMinusOne && found == 0;tmpColum++){
